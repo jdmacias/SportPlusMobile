@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sport+</string>
+
+    <!-- Marca y barras -->
+    <string name="logo_sport">SPORT</string>
+    <string name="logo_plus">+</string>
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_catalogo">Catálogo</string>
+    <string name="nav_carrito">Carrito</string>
+    <string name="cd_carrito">Abrir el carrito</string>
+    <string name="cd_atras">Volver a la pantalla anterior</string>
+    <string name="cd_buscar">Buscar</string>
+    <string name="cd_menos">Disminuir la cantidad</string>
+    <string name="cd_mas">Aumentar la cantidad</string>
+    <string name="simbolo_menos">−</string>
+    <string name="simbolo_mas">+</string>
+
+    <!-- Avisos -->
+    <string name="aviso_prototipo">Prototipo académico. Productos, precios y costo de envío son datos ficticios.</string>
+    <string name="aviso_simulacion_datos">Simulación. Estos datos no se envían a ningún servidor.</string>
+
+    <!-- Inicio -->
+    <string name="banner_etiqueta">MAQUETA ACADÉMICA</string>
+    <string name="banner_titulo">Descubre nuestros productos deportivos</string>
+    <string name="banner_boton">Ver el catálogo</string>
+    <string name="seccion_productos">Productos de demostración</string>
+    <string name="seccion_como_funciona">Cómo funciona esta maqueta</string>
+    <string name="como_1_titulo">Explora el catálogo</string>
+    <string name="como_1_texto">Cuatro productos de demostración.</string>
+    <string name="como_2_titulo">Agrega al carrito</string>
+    <string name="como_2_texto">El contador se actualiza al instante.</string>
+    <string name="como_3_titulo">Revisa el resumen</string>
+    <string name="como_3_texto">Subtotal, envío y total.</string>
+    <string name="boton_agregar">Agregar</string>
+    <string name="boton_agregar_carrito">Agregar al carrito</string>
+
+    <!-- Catalogo -->
+    <string name="buscar_hint">Buscar camisa, bandas, botella</string>
+    <string name="catalogo_titulo">Catálogo de demostración</string>
+    <plurals name="catalogo_disponibles">
+        <item quantity="one">%d producto disponible.</item>
+        <item quantity="other">%d productos disponibles.</item>
+    </plurals>
+    <plurals name="catalogo_encontrados">
+        <item quantity="one">%d producto encontrado.</item>
+        <item quantity="other">%d productos encontrados.</item>
+    </plurals>
+    <string name="sin_resultados_titulo">No encontramos productos</string>
+    <string name="sin_resultados_texto">que coincidan con tu búsqueda.</string>
+    <string name="boton_ver_todos">Ver todos los productos</string>
+
+    <!-- Detalle de producto -->
+    <string name="titulo_producto">Producto</string>
+    <string name="detalle_etiqueta">PRODUCTO DE DEMOSTRACIÓN</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="volver_catalogo">Volver al catálogo</string>
+
+    <!-- Carrito -->
+    <string name="carrito_titulo">Carrito de compras</string>
+    <string name="subtotal_linea">Subtotal: %1$s</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="resumen_titulo">Resumen de la compra</string>
+    <string name="unidades">Unidades</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="envio">Envío demostrativo</string>
+    <string name="total">Total</string>
+    <string name="continuar_compra">Continuar con la compra</string>
+    <string name="vaciar_carrito">Vaciar carrito</string>
+    <string name="seguir_comprando">Seguir comprando</string>
+    <string name="carrito_nota">Simulación: no se cobra nada ni se piden datos de pago.</string>
+    <string name="vacio_titulo">Tu carrito está vacío</string>
+    <string name="vacio_texto">Agrega productos desde el catálogo.</string>
+    <string name="ir_catalogo">Ir al catálogo</string>
+
+    <!-- Datos de compra -->
+    <string name="titulo_datos_compra">Datos de compra</string>
+    <string name="campo_nombre">Nombre completo</string>
+    <string name="campo_correo">Correo electrónico</string>
+    <string name="campo_telefono">Teléfono</string>
+    <string name="campo_direccion">Dirección de entrega</string>
+    <string name="campo_ciudad">Ciudad</string>
+    <string name="error_nombre">Escribe tu nombre completo (mínimo 3 caracteres).</string>
+    <string name="error_correo">Escribe un correo válido, ej. nombre@dominio.com.</string>
+    <string name="error_telefono">Escribe un teléfono de al menos 7 dígitos.</string>
+    <string name="error_direccion">Escribe una dirección de al menos 5 caracteres.</string>
+    <string name="error_ciudad">Escribe la ciudad (mínimo 3 caracteres).</string>
+    <string name="aviso_errores">Revisa los 5 campos marcados antes de continuar.</string>
+    <string name="confirmar_compra">Confirmar compra simulada</string>
+    <string name="volver_carrito">Volver al carrito</string>
+    <string name="resumen_corto">Resumen</string>
+    <plurals name="unidades_cantidad">
+        <item quantity="one">%d unidad</item>
+        <item quantity="other">%d unidades</item>
+    </plurals>
+
+    <!-- Confirmacion -->
+    <string name="titulo_confirmacion">Confirmación</string>
+    <string name="confirmacion_aviso_titulo">No se realizó ninguna compra real</string>
+    <string name="confirmacion_aviso_texto">Es una demostración académica: no hubo pago ni se enviará ningún producto.</string>
+    <string name="pedido_simulado">Pedido simulado</string>
+    <string name="total_simulado">Total simulado</string>
+    <string name="datos_contacto_simulacion">Datos de contacto de la simulación</string>
+    <string name="etiqueta_nombre">Nombre</string>
+    <string name="etiqueta_correo">Correo</string>
+    <string name="etiqueta_ciudad">Ciudad</string>
+    <string name="seguir_explorando">Seguir explorando el catálogo</string>
+    <string name="volver_inicio">Volver al inicio</string>
+
+    <!-- Productos de demostracion -->
+    <string name="producto_zapatillas_nombre">Zapatillas EvoRun Pro</string>
+    <string name="producto_zapatillas_descripcion">Zapatillas de alto rendimiento diseñadas para ofrecer máxima comodidad al correr.</string>
+    <string name="producto_zapatillas_precio">$389.900</string>
+    <string name="producto_camisa_nombre">Camisa Dri-Fit Elite</string>
+    <string name="producto_camisa_descripcion">Camisa deportiva Dri-Fit Elite.</string>
+    <string name="producto_camisa_precio">$99.900</string>
+    <string name="producto_bandas_nombre">Set de bandas elásticas</string>
+    <string name="producto_bandas_descripcion">Set de bandas elásticas para entrenamiento.</string>
+    <string name="producto_bandas_precio">$89.900</string>
+    <string name="producto_botella_nombre">Botella deportiva</string>
+    <string name="producto_botella_descripcion">Botella deportiva.</string>
+    <string name="producto_botella_precio">$39.900</string>
+    <string name="cd_img_zapatillas">Ilustración de las zapatillas EvoRun Pro</string>
+    <string name="cd_img_camisa">Ilustración de la camisa Dri-Fit Elite</string>
+    <string name="cd_img_bandas">Ilustración del set de bandas elásticas</string>
+    <string name="cd_img_botella">Ilustración de la botella deportiva</string>
+
+    <!-- Plantilla de estilos -->
+    <string name="plantilla_titulo">Plantilla de estilos</string>
+    <string name="plantilla_paleta">Paleta de colores</string>
+    <string name="plantilla_color_azul_marino">Azul marino · #12304A</string>
+    <string name="plantilla_color_blanco">Blanco · #FFFFFF</string>
+    <string name="plantilla_color_azul_accesible">Azul accesible · #005A9C</string>
+    <string name="plantilla_color_borde">Borde · #C8D2DC</string>
+    <string name="plantilla_color_campo">Campo · #5B7286</string>
+    <string name="plantilla_color_fondo_suave">Fondo suave · #F2F5F8</string>
+    <string name="plantilla_color_texto_apoyo">Texto de apoyo · #3D5568</string>
+    <string name="plantilla_tipografia">Tipografía</string>
+    <string name="plantilla_texto_titulo">Título de pantalla</string>
+    <string name="plantilla_texto_subtitulo">Subtítulo de sección</string>
+    <string name="plantilla_texto_cuerpo">Texto de cuerpo</string>
+    <string name="plantilla_texto_apoyo">Texto de apoyo</string>
+    <string name="plantilla_botones">Botones</string>
+    <string name="plantilla_boton_primario">Botón primario</string>
+    <string name="plantilla_boton_secundario">Botón secundario</string>
+    <string name="plantilla_campos">Campos de formulario</string>
+    <string name="plantilla_etiqueta_campo">Etiqueta del campo</string>
+    <string name="plantilla_texto_ejemplo">Texto de ejemplo</string>
+    <string name="plantilla_campo_error">Campo con error</string>
+    <string name="plantilla_tarjeta">Tarjeta de producto</string>
+    <string name="plantilla_aviso">Aviso informativo</string>
+    <string name="plantilla_aviso_texto">Aviso informativo de prototipo académico.</string>
+    <string name="plantilla_cantidad">Selector de cantidad</string>
+    <string name="plantilla_valor_uno">1</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topbar_height"
+    android:background="@color/colorSecondaryDark"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btnAtras"
+        android:layout_width="@dimen/touch_target"
+        android:layout_height="@dimen/touch_target"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/cd_atras"
+        android:src="@drawable/ic_back"
+        android:visibility="gone"
+        app:tint="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/tvTituloBarra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.SportPlus.TopBarTitle"
+        android:visibility="gone"
+        tools:text="@string/titulo_producto" />
+
+    <LinearLayout
+        android:id="@+id/logoContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_l"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logo_sport"
+            android:textAppearance="@style/TextAppearance.SportPlus.Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logo_plus"
+            android:textAppearance="@style/TextAppearance.SportPlus.LogoPlus" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="@dimen/touch_target"
+        android:layout_height="@dimen/touch_target"
+        android:layout_marginEnd="@dimen/space_xs">
+
+        <ImageButton
+            android:id="@+id/btnCarrito"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_carrito"
+            android:src="@drawable/ic_cart"
+            app:tint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tvContadorCarrito"
+            android:layout_width="@dimen/badge_size"
+            android:layout_height="@dimen/badge_size"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="@dimen/space_s"
+            android:layout_marginEnd="@dimen/space_xs"
+            android:background="@drawable/bg_badge"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:textAppearance="@style/TextAppearance.SportPlus.Badge"
+            android:visibility="gone"
+            tools:text="3"
+            tools:visibility="visible" />
+    </FrameLayout>
+</LinearLayout>

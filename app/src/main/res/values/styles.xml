@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== Texto ===== -->
+    <style name="TextAppearance.SportPlus" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+    </style>
+
+    <style name="TextAppearance.SportPlus.Logo" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_logo</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.LogoPlus" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_logo</item>
+        <item name="android:textColor">@color/colorLogoAccent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.TopBarTitle" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_topbar_title</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.ScreenTitle" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_screen_title</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.Section" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_section</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.SubSection" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_subsection</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.BannerLabel" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_overline</item>
+        <item name="android:textColor">@color/colorOnNavySoft</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.BannerTitle" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_hero</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.Body" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+    </style>
+    <style name="TextAppearance.SportPlus.BodyStrong" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.Support" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_support</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+    </style>
+    <style name="TextAppearance.SportPlus.SupportValue" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_support</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+    </style>
+    <style name="TextAppearance.SportPlus.SupportValueStrong" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_support</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.Label" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_support</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.Overline" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_overline</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.ProductName" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_product_name</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.ProductPrice" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_product_price</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.ProductNameLarge" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_hero</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.PriceLarge" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_detail_price</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.CartItemName" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.Total" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_subsection</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.Error" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_support</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+    </style>
+    <style name="TextAppearance.SportPlus.QuantityValue" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_section</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.Badge" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_badge</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.NavActive" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_support</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.SportPlus.NavInactive" parent="TextAppearance.SportPlus">
+        <item name="android:textSize">@dimen/text_support</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+    </style>
+
+    <!-- ===== Botones ===== -->
+    <style name="Widget.SportPlus.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+    </style>
+
+    <style name="Widget.SportPlus.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">@dimen/text_button_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="backgroundTint">@color/colorWhite</item>
+        <item name="strokeColor">@color/colorPrimary</item>
+        <item name="strokeWidth">@dimen/stroke_default</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+    </style>
+
+    <style name="Widget.SportPlus.Button.Quantity" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minWidth">@dimen/touch_target</item>
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">@dimen/text_quantity_symbol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="backgroundTint">@color/colorWhite</item>
+        <item name="strokeColor">@color/colorField</item>
+        <item name="strokeWidth">@dimen/stroke_default</item>
+        <item name="cornerRadius">@dimen/radius_field</item>
+    </style>
+
+    <style name="Widget.SportPlus.Button.Link" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">@dimen/text_button_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- ===== Tarjetas ===== -->
+    <style name="Widget.SportPlus.Card" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="strokeColor">@color/colorBorder</item>
+        <item name="strokeWidth">@dimen/stroke_default</item>
+    </style>
+
+    <style name="Widget.SportPlus.Card.Soft" parent="Widget.SportPlus.Card">
+        <item name="cardBackgroundColor">@color/colorBackground</item>
+        <item name="cardCornerRadius">@dimen/radius_block</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- ===== Campos ===== -->
+    <style name="Widget.SportPlus.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_field</item>
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:paddingStart">@dimen/space_m</item>
+        <item name="android:paddingEnd">@dimen/space_m</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textColorHint">@color/colorTextSecondary</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- ===== Barra de navegacion inferior ===== -->
+    <style name="Widget.SportPlus.NavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/colorSelected</item>
+    </style>
+
+</resources>

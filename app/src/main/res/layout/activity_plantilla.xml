@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/view_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/plantilla_titulo"
+                android:textAppearance="@style/TextAppearance.SportPlus.ScreenTitle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/plantilla_paleta"
+                android:textAppearance="@style/TextAppearance.SportPlus.Section" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.SportPlus.Card"
+                    android:layout_width="@dimen/touch_target"
+                    android:layout_height="@dimen/touch_target"
+                    app:cardBackgroundColor="@color/colorSecondaryDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_m"
+                    android:text="@string/plantilla_color_azul_marino"
+                    android:textAppearance="@style/TextAppearance.SportPlus.SupportValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.SportPlus.Card"
+                    android:layout_width="@dimen/touch_target"
+                    android:layout_height="@dimen/touch_target"
+                    app:cardBackgroundColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_m"
+                    android:text="@string/plantilla_color_blanco"
+                    android:textAppearance="@style/TextAppearance.SportPlus.SupportValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.SportPlus.Card"
+                    android:layout_width="@dimen/touch_target"
+                    android:layout_height="@dimen/touch_target"
+                    app:cardBackgroundColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_m"
+                    android:text="@string/plantilla_color_azul_accesible"
+                    android:textAppearance="@style/TextAppearance.SportPlus.SupportValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.SportPlus.Card"
+                    android:layout_width="@dimen/touch_target"
+                    android:layout_height="@dimen/touch_target"
+                    app:cardBackgroundColor="@color/colorBorder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_m"
+                    android:text="@string/plantilla_color_borde"
+                    android:textAppearance="@style/TextAppearance.SportPlus.SupportValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.SportPlus.Card"
+                    android:layout_width="@dimen/touch_target"
+                    android:layout_height="@dimen/touch_target"
+                    app:cardBackgroundColor="@color/colorField" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_m"
+                    android:text="@string/plantilla_color_campo"
+                    android:textAppearance="@style/TextAppearance.SportPlus.SupportValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.SportPlus.Card"
+                    android:layout_width="@dimen/touch_target"
+                    android:layout_height="@dimen/touch_target"
+                    app:cardBackgroundColor="@color/colorBackground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_m"
+                    android:text="@string/plantilla_color_fondo_suave"
+                    android:textAppearance="@style/TextAppearance.SportPlus.SupportValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.SportPlus.Card"
+                    android:layout_width="@dimen/touch_target"
+                    android:layout_height="@dimen/touch_target"
+                    app:cardBackgroundColor="@color/colorTextSecondary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_m"
+                    android:text="@string/plantilla_color_texto_apoyo"
+                    android:textAppearance="@style/TextAppearance.SportPlus.SupportValue" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/plantilla_tipografia"
+                android:textAppearance="@style/TextAppearance.SportPlus.Section" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:text="@string/plantilla_texto_titulo"
+                android:textAppearance="@style/TextAppearance.SportPlus.ScreenTitle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:text="@string/plantilla_texto_subtitulo"
+                android:textAppearance="@style/TextAppearance.SportPlus.Section" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:text="@string/plantilla_texto_cuerpo"
+                android:textAppearance="@style/TextAppearance.SportPlus.Body" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:text="@string/plantilla_texto_apoyo"
+                android:textAppearance="@style/TextAppearance.SportPlus.Support" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/plantilla_botones"
+                android:textAppearance="@style/TextAppearance.SportPlus.Section" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.SportPlus.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:text="@string/plantilla_boton_primario" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.SportPlus.Button.Secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:text="@string/plantilla_boton_secundario" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.SportPlus.Button.Link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:text="@string/volver_catalogo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/plantilla_campos"
+                android:textAppearance="@style/TextAppearance.SportPlus.Section" />
+
+            <TextView
+                android:id="@+id/lblCampoEjemplo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:labelFor="@+id/etCampoEjemplo"
+                android:text="@string/plantilla_etiqueta_campo"
+                android:textAppearance="@style/TextAppearance.SportPlus.Label" />
+
+            <EditText
+                android:id="@+id/etCampoEjemplo"
+                style="@style/Widget.SportPlus.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:autofillHints="name"
+                android:hint="@string/plantilla_texto_ejemplo"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblCampoError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_m"
+                android:labelFor="@+id/etCampoError"
+                android:text="@string/plantilla_campo_error"
+                android:textAppearance="@style/TextAppearance.SportPlus.Label" />
+
+            <EditText
+                android:id="@+id/etCampoError"
+                style="@style/Widget.SportPlus.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/bg_field_error"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:background="@drawable/bg_error_bar"
+                android:paddingStart="9dp"
+                android:text="@string/error_correo"
+                android:textAppearance="@style/TextAppearance.SportPlus.Error" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/plantilla_tarjeta"
+                android:textAppearance="@style/TextAppearance.SportPlus.Section" />
+
+            <include
+                layout="@layout/item_producto"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/plantilla_aviso"
+                android:textAppearance="@style/TextAppearance.SportPlus.Section" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:background="@drawable/bg_notice"
+                android:padding="@dimen/space_m"
+                android:paddingStart="@dimen/space_l"
+                android:text="@string/plantilla_aviso_texto"
+                android:textAppearance="@style/TextAppearance.SportPlus.Support" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/plantilla_cantidad"
+                android:textAppearance="@style/TextAppearance.SportPlus.Section" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:layout_marginBottom="@dimen/space_l"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.SportPlus.Button.Quantity"
+                    android:layout_width="@dimen/touch_target"
+                    android:layout_height="@dimen/touch_target"
+                    android:contentDescription="@string/cd_menos"
+                    android:text="@string/simbolo_menos" />
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="@dimen/touch_target"
+                    android:layout_marginStart="@dimen/space_xs"
+                    android:layout_marginEnd="@dimen/space_xs"
+                    android:background="@drawable/bg_quantity"
+                    android:gravity="center"
+                    android:text="@string/plantilla_valor_uno"
+                    android:textAppearance="@style/TextAppearance.SportPlus.QuantityValue" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.SportPlus.Button.Quantity"
+                    android:layout_width="@dimen/touch_target"
+                    android:layout_height="@dimen/touch_target"
+                    android:contentDescription="@string/cd_mas"
+                    android:text="@string/simbolo_mas" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_default"
+        android:background="@color/colorBorder" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomnav_height"
+        android:background="@color/colorWhite"
+        app:elevation="0dp"
+        app:itemActiveIndicatorStyle="@style/Widget.SportPlus.NavIndicator"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextAppearanceActive="@style/TextAppearance.SportPlus.NavActive"
+        app:itemTextAppearanceInactive="@style/TextAppearance.SportPlus.NavInactive"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom_nav" />
+</LinearLayout>

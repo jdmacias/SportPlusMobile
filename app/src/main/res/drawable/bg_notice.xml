@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorBackground" />
+            <corners android:radius="@dimen/radius_notice" />
+        </shape>
+    </item>
+    <item android:width="4dp" android:gravity="start">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorPrimary" />
+            <corners
+                android:bottomLeftRadius="@dimen/radius_notice"
+                android:topLeftRadius="@dimen/radius_notice" />
+        </shape>
+    </item>
+</layer-list>

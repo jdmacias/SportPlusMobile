@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.SportPlus.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_xs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_s">
+
+        <ImageView
+            android:id="@+id/ivProducto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_card_height"
+            android:background="@drawable/bg_image_box"
+            android:contentDescription="@string/cd_img_zapatillas"
+            android:padding="@dimen/space_s"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_producto_zapatillas" />
+
+        <TextView
+            android:id="@+id/tvNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/producto_zapatillas_nombre"
+            android:textAppearance="@style/TextAppearance.SportPlus.ProductName" />
+
+        <TextView
+            android:id="@+id/tvPrecioProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:text="@string/producto_zapatillas_precio"
+            android:textAppearance="@style/TextAppearance.SportPlus.ProductPrice" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAgregar"
+            style="@style/Widget.SportPlus.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m"
+            android:text="@string/boton_agregar_carrito" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

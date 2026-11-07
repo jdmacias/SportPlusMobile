@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Espaciado -->
+    <dimen name="screen_margin">12dp</dimen>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_s">8dp</dimen>
+    <dimen name="space_m">12dp</dimen>
+    <dimen name="space_l">16dp</dimen>
+
+    <!-- Tamanos tactiles y barras -->
+    <dimen name="touch_target">48dp</dimen>
+    <dimen name="topbar_height">48dp</dimen>
+    <dimen name="bottomnav_height">64dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="badge_size">16dp</dimen>
+
+    <!-- Esquinas y bordes -->
+    <dimen name="radius_card">10dp</dimen>
+    <dimen name="radius_button">10dp</dimen>
+    <dimen name="radius_field">8dp</dimen>
+    <dimen name="radius_block">12dp</dimen>
+    <dimen name="radius_notice">8dp</dimen>
+    <dimen name="stroke_default">1dp</dimen>
+    <dimen name="stroke_focus">2dp</dimen>
+
+    <!-- Imagenes -->
+    <dimen name="image_card_height">102dp</dimen>
+    <dimen name="image_detail_height">216dp</dimen>
+    <dimen name="image_cart_size">60dp</dimen>
+
+    <!-- Tamanos de texto (sp) -->
+    <dimen name="text_logo">20sp</dimen>
+    <dimen name="text_topbar_title">18sp</dimen>
+    <dimen name="text_screen_title">17sp</dimen>
+    <dimen name="text_section">16sp</dimen>
+    <dimen name="text_subsection">15sp</dimen>
+    <dimen name="text_body">13sp</dimen>
+    <dimen name="text_support">12sp</dimen>
+    <dimen name="text_overline">11sp</dimen>
+    <dimen name="text_hero">20sp</dimen>
+    <dimen name="text_product_name">12sp</dimen>
+    <dimen name="text_product_price">15sp</dimen>
+    <dimen name="text_detail_price">22sp</dimen>
+    <dimen name="text_button">14sp</dimen>
+    <dimen name="text_button_small">13sp</dimen>
+    <dimen name="text_quantity_symbol">20sp</dimen>
+    <dimen name="text_badge">10sp</dimen>
+</resources>

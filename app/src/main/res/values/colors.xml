@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSecondaryDark">#12304A</color>
+    <color name="colorPrimary">#005A9C</color>
+    <color name="colorBorder">#C8D2DC</color>
+    <color name="colorBackground">#F2F5F8</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorField">#5B7286</color>
+    <color name="colorTextSecondary">#3D5568</color>
+    <color name="colorSelected">#DCEAF6</color>
+    <color name="colorOnNavySoft">#AACDEB</color>
+    <color name="colorLogoAccent">#78BEF0</color>
+</resources>

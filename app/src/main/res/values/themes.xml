@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SportPlus" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryContainer">@color/colorSelected</item>
+        <item name="colorOnPrimaryContainer">@color/colorSecondaryDark</item>
+        <item name="colorSecondary">@color/colorSecondaryDark</item>
+        <item name="colorOnSecondary">@color/colorWhite</item>
+        <item name="colorSecondaryContainer">@color/colorSelected</item>
+        <item name="colorOnSecondaryContainer">@color/colorSecondaryDark</item>
+        <item name="colorSurface">@color/colorWhite</item>
+        <item name="colorOnSurface">@color/colorSecondaryDark</item>
+        <item name="colorOnSurfaceVariant">@color/colorTextSecondary</item>
+        <item name="colorOutline">@color/colorField</item>
+        <item name="colorOutlineVariant">@color/colorBorder</item>
+        <item name="android:colorBackground">@color/colorWhite</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorSecondaryDark</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="android:textColorHint">@color/colorTextSecondary</item>
+        <item name="android:statusBarColor">@color/colorSecondaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
