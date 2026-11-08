@@ -379,7 +379,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/bottomnav_height"
         android:background="@color/colorWhite"
-        app:elevation="0dp"
+        android:elevation="0dp"
         app:itemActiveIndicatorStyle="@style/Widget.SportPlus.NavIndicator"
         app:itemIconTint="@color/nav_item_color"
         app:itemTextAppearanceActive="@style/TextAppearance.SportPlus.NavActive"

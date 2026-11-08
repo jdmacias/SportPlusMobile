@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/view_topbar" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/dividerNav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_default"
+        android:background="@color/colorBorder" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomnav_height"
+        android:background="@color/colorWhite"
+        android:elevation="0dp"
+        app:itemActiveIndicatorStyle="@style/Widget.SportPlus.NavIndicator"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextAppearanceActive="@style/TextAppearance.SportPlus.NavActive"
+        app:itemTextAppearanceInactive="@style/TextAppearance.SportPlus.NavInactive"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom_nav" />
+</LinearLayout>

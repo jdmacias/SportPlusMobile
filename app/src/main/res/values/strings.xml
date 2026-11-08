@@ -125,6 +125,15 @@
     <string name="cd_img_bandas">Ilustración del set de bandas elásticas</string>
     <string name="cd_img_botella">Ilustración de la botella deportiva</string>
 
+    <string name="cd_agregar_producto">Agregar %1$s al carrito</string>
+    <string name="cd_menos_producto">Disminuir la cantidad de %1$s</string>
+    <string name="cd_mas_producto">Aumentar la cantidad de %1$s</string>
+    <string name="cd_eliminar_producto">Eliminar %1$s del carrito</string>
+    <plurals name="cd_carrito_cantidad">
+        <item quantity="one">Abrir el carrito, %d producto</item>
+        <item quantity="other">Abrir el carrito, %d productos</item>
+    </plurals>
+
     <!-- Plantilla de estilos -->
     <string name="plantilla_titulo">Plantilla de estilos</string>
     <string name="plantilla_paleta">Paleta de colores</string>

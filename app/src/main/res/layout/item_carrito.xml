@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.SportPlus.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_xs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivProductoCarrito"
+                android:layout_width="@dimen/image_cart_size"
+                android:layout_height="@dimen/image_cart_size"
+                android:background="@drawable/bg_image_box"
+                android:contentDescription="@string/cd_img_zapatillas"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_producto_zapatillas" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_m"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNombreCarrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/producto_zapatillas_nombre"
+                    android:textAppearance="@style/TextAppearance.SportPlus.CartItemName" />
+
+                <TextView
+                    android:id="@+id/tvSubtotalLinea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xs"
+                    android:textAppearance="@style/TextAppearance.SportPlus.Support"
+                    tools:text="Subtotal: $389.900" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMenos"
+                style="@style/Widget.SportPlus.Button.Quantity"
+                android:layout_width="@dimen/touch_target"
+                android:layout_height="@dimen/touch_target"
+                android:contentDescription="@string/cd_menos"
+                android:text="@string/simbolo_menos" />
+
+            <TextView
+                android:id="@+id/tvCantidad"
+                android:layout_width="@dimen/touch_target"
+                android:layout_height="@dimen/touch_target"
+                android:layout_marginStart="@dimen/space_xs"
+                android:layout_marginEnd="@dimen/space_xs"
+                android:background="@drawable/bg_quantity"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.SportPlus.QuantityValue"
+                tools:text="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMas"
+                style="@style/Widget.SportPlus.Button.Quantity"
+                android:layout_width="@dimen/touch_target"
+                android:layout_height="@dimen/touch_target"
+                android:contentDescription="@string/cd_mas"
+                android:text="@string/simbolo_mas" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEliminar"
+                style="@style/Widget.SportPlus.Button.Secondary"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/eliminar" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
