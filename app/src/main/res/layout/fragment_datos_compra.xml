@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_notice"
+            android:padding="@dimen/space_m"
+            android:paddingStart="@dimen/space_l"
+            android:text="@string/aviso_simulacion_datos"
+            android:textAppearance="@style/TextAppearance.SportPlus.Support" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m"
+            android:labelFor="@+id/etNombre"
+            android:text="@string/campo_nombre"
+            android:textAppearance="@style/TextAppearance.SportPlus.Label" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            style="@style/Widget.SportPlus.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName|textCapWords" />
+
+        <TextView
+            android:id="@+id/tvErrorNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:accessibilityLiveRegion="polite"
+            android:background="@drawable/bg_error_bar"
+            android:paddingStart="9dp"
+            android:text="@string/error_nombre"
+            android:textAppearance="@style/TextAppearance.SportPlus.Error"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_s"
+            android:labelFor="@+id/etCorreo"
+            android:text="@string/campo_correo"
+            android:textAppearance="@style/TextAppearance.SportPlus.Label" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            style="@style/Widget.SportPlus.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/tvErrorCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:accessibilityLiveRegion="polite"
+            android:background="@drawable/bg_error_bar"
+            android:paddingStart="9dp"
+            android:text="@string/error_correo"
+            android:textAppearance="@style/TextAppearance.SportPlus.Error"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_s"
+            android:labelFor="@+id/etTelefono"
+            android:text="@string/campo_telefono"
+            android:textAppearance="@style/TextAppearance.SportPlus.Label" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            style="@style/Widget.SportPlus.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/tvErrorTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:accessibilityLiveRegion="polite"
+            android:background="@drawable/bg_error_bar"
+            android:paddingStart="9dp"
+            android:text="@string/error_telefono"
+            android:textAppearance="@style/TextAppearance.SportPlus.Error"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_s"
+            android:labelFor="@+id/etDireccion"
+            android:text="@string/campo_direccion"
+            android:textAppearance="@style/TextAppearance.SportPlus.Label" />
+
+        <EditText
+            android:id="@+id/etDireccion"
+            style="@style/Widget.SportPlus.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:importantForAutofill="no"
+            android:inputType="textPostalAddress|textCapSentences" />
+
+        <TextView
+            android:id="@+id/tvErrorDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:accessibilityLiveRegion="polite"
+            android:background="@drawable/bg_error_bar"
+            android:paddingStart="9dp"
+            android:text="@string/error_direccion"
+            android:textAppearance="@style/TextAppearance.SportPlus.Error"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_s"
+            android:labelFor="@+id/etCiudad"
+            android:text="@string/campo_ciudad"
+            android:textAppearance="@style/TextAppearance.SportPlus.Label" />
+
+        <EditText
+            android:id="@+id/etCiudad"
+            style="@style/Widget.SportPlus.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:importantForAutofill="no"
+            android:inputType="text|textCapWords" />
+
+        <TextView
+            android:id="@+id/tvErrorCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:accessibilityLiveRegion="polite"
+            android:background="@drawable/bg_error_bar"
+            android:paddingStart="9dp"
+            android:text="@string/error_ciudad"
+            android:textAppearance="@style/TextAppearance.SportPlus.Error"
+            android:visibility="gone" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.SportPlus.Card.Soft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_l">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumen_corto"
+                    android:textAppearance="@style/TextAppearance.SportPlus.BodyStrong" />
+
+                <TextView
+                    android:id="@+id/tvDatosUnidades"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xs"
+                    android:textAppearance="@style/TextAppearance.SportPlus.Support"
+                    tools:text="3 unidades" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_s"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total"
+                        android:textAppearance="@style/TextAppearance.SportPlus.Total" />
+
+                    <TextView
+                        android:id="@+id/tvDatosTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.SportPlus.Total"
+                        tools:text="$0" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvAvisoErrores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m"
+            android:accessibilityLiveRegion="polite"
+            android:background="@drawable/bg_aviso_destacado"
+            android:gravity="center"
+            android:padding="@dimen/space_m"
+            android:textAppearance="@style/TextAppearance.SportPlus.Label"
+            android:visibility="gone"
+            tools:text="Revisa los 5 campos marcados antes de continuar."
+            tools:visibility="visible" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmar"
+            style="@style/Widget.SportPlus.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m"
+            android:text="@string/confirmar_compra" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVolverCarrito"
+            style="@style/Widget.SportPlus.Button.Link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/volver_carrito" />
+    </LinearLayout>
+</ScrollView>

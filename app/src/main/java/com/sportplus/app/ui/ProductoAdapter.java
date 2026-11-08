@@ -27,14 +27,21 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.Holder
         void agregar(Producto producto);
     }
 
+    public interface AlAbrir {
+        void abrir(Producto producto);
+    }
+
     private final List<Producto> datos = new ArrayList<>();
     private final int textoBoton;
     private final AlAgregar alAgregar;
+    private final AlAbrir alAbrir;
 
-    public ProductoAdapter(List<Producto> iniciales, @StringRes int textoBoton, AlAgregar alAgregar) {
+    public ProductoAdapter(List<Producto> iniciales, @StringRes int textoBoton, AlAgregar alAgregar,
+                           AlAbrir alAbrir) {
         this.datos.addAll(iniciales);
         this.textoBoton = textoBoton;
         this.alAgregar = alAgregar;
+        this.alAbrir = alAbrir;
     }
 
     @SuppressLint("NotifyDataSetChanged")
@@ -63,6 +70,7 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.Holder
         holder.agregar.setText(textoBoton);
         holder.agregar.setContentDescription(contexto.getString(R.string.cd_agregar_producto, nombre));
         holder.agregar.setOnClickListener(v -> alAgregar.agregar(producto));
+        holder.itemView.setOnClickListener(v -> alAbrir.abrir(producto));
     }
 
     @Override

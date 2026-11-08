@@ -85,7 +85,11 @@
     <string name="error_telefono">Escribe un teléfono de al menos 7 dígitos.</string>
     <string name="error_direccion">Escribe una dirección de al menos 5 caracteres.</string>
     <string name="error_ciudad">Escribe la ciudad (mínimo 3 caracteres).</string>
-    <string name="aviso_errores">Revisa los 5 campos marcados antes de continuar.</string>
+    <plurals name="aviso_errores_cantidad">
+        <item quantity="one">Revisa el campo marcado antes de continuar.</item>
+        <item quantity="other">Revisa los %d campos marcados antes de continuar.</item>
+    </plurals>
+    <string name="pedido_linea">%1$d × %2$s</string>
     <string name="confirmar_compra">Confirmar compra simulada</string>
     <string name="volver_carrito">Volver al carrito</string>
     <string name="resumen_corto">Resumen</string>

@@ -32,6 +32,8 @@ public class InicioFragment extends Fragment {
         destacados.setLayoutManager(new GridLayoutManager(requireContext(),
                 getResources().getInteger(R.integer.catalogo_columnas)));
         destacados.setAdapter(new ProductoAdapter(Catalogo.destacados(), R.string.boton_agregar,
-                producto -> Carrito.get().agregar(producto.id, 1)));
+                producto -> Carrito.get().agregar(producto.id, 1),
+                producto -> ((MainActivity) requireActivity())
+                        .abrirPantalla(DetalleFragment.nuevo(producto.id), R.string.titulo_producto)));
     }
 }

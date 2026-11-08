@@ -60,6 +60,8 @@ public class CarritoFragment extends Fragment implements Carrito.Observador {
         vista.findViewById(R.id.btnSeguirComprando).setOnClickListener(irAlCatalogo);
         vista.findViewById(R.id.btnIrCatalogo).setOnClickListener(irAlCatalogo);
         vista.findViewById(R.id.btnVaciar).setOnClickListener(v -> Carrito.get().vaciar());
+        vista.findViewById(R.id.btnContinuar).setOnClickListener(v -> ((MainActivity) requireActivity())
+                .abrirPantalla(new DatosCompraFragment(), R.string.titulo_datos_compra));
 
         refrescar();
     }

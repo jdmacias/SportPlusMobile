@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -18,11 +19,16 @@ import com.sportplus.app.ui.InicioFragment;
 /**
  * Actividad principal: barra superior con el carrito, contenedor de pantallas
  * y barra de navegacion inferior con tres destinos (Inicio, Catalogo y Carrito).
+ * Las pantallas de nivel 2 y 3 se apilan encima y muestran flecha de regreso.
  */
 public class MainActivity extends AppCompatActivity implements Carrito.Observador {
 
     private BottomNavigationView navegacionInferior;
+    private View divisorNavegacion;
+    private ImageButton botonAtras;
     private ImageButton botonCarrito;
+    private TextView tituloBarra;
+    private View logo;
     private TextView contadorCarrito;
 
     @Override
@@ -31,7 +37,11 @@ public class MainActivity extends AppCompatActivity implements Carrito.Observado
         setContentView(R.layout.activity_main);
 
         navegacionInferior = findViewById(R.id.bottomNav);
+        divisorNavegacion = findViewById(R.id.dividerNav);
+        botonAtras = findViewById(R.id.btnAtras);
         botonCarrito = findViewById(R.id.btnCarrito);
+        tituloBarra = findViewById(R.id.tvTituloBarra);
+        logo = findViewById(R.id.logoContainer);
         contadorCarrito = findViewById(R.id.tvContadorCarrito);
 
         navegacionInferior.setOnItemSelectedListener(item -> {
@@ -39,6 +49,8 @@ public class MainActivity extends AppCompatActivity implements Carrito.Observado
             return true;
         });
         botonCarrito.setOnClickListener(v -> irA(R.id.nav_carrito));
+        botonAtras.setOnClickListener(v -> getOnBackPressedDispatcher().onBackPressed());
+        getSupportFragmentManager().addOnBackStackChangedListener(this::sincronizarBarra);
 
         if (savedInstanceState == null) {
             mostrarSeccion(R.id.nav_inicio);
@@ -63,9 +75,21 @@ public class MainActivity extends AppCompatActivity implements Carrito.Observado
         actualizarContador();
     }
 
-    /** Cambia de seccion principal y marca el destino en la barra inferior. */
+    /** Va a una seccion principal, cierre o no pantallas apiladas, y la marca en la barra inferior. */
     public void irA(int destinoId) {
-        navegacionInferior.setSelectedItemId(destinoId);
+        if (navegacionInferior.getSelectedItemId() == destinoId) {
+            mostrarSeccion(destinoId);
+        } else {
+            navegacionInferior.setSelectedItemId(destinoId);
+        }
+    }
+
+    /** Apila una pantalla de nivel 2 o 3 con su titulo en la barra superior. */
+    public void abrirPantalla(Fragment pantalla, @StringRes int titulo) {
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragmentContainer, pantalla)
+                .addToBackStack(String.valueOf(titulo))
+                .commit();
     }
 
     private void mostrarSeccion(int destinoId) {
@@ -80,6 +104,28 @@ public class MainActivity extends AppCompatActivity implements Carrito.Observado
         FragmentManager manager = getSupportFragmentManager();
         manager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         manager.beginTransaction().replace(R.id.fragmentContainer, pantalla).commit();
+    }
+
+    private void sincronizarBarra() {
+        FragmentManager manager = getSupportFragmentManager();
+        int apiladas = manager.getBackStackEntryCount();
+        if (apiladas == 0) {
+            aplicarBarra(false, 0);
+        } else {
+            String nombre = manager.getBackStackEntryAt(apiladas - 1).getName();
+            aplicarBarra(true, Integer.parseInt(nombre));
+        }
+    }
+
+    private void aplicarBarra(boolean secundaria, @StringRes int titulo) {
+        botonAtras.setVisibility(secundaria ? View.VISIBLE : View.GONE);
+        tituloBarra.setVisibility(secundaria ? View.VISIBLE : View.GONE);
+        logo.setVisibility(secundaria ? View.GONE : View.VISIBLE);
+        navegacionInferior.setVisibility(secundaria ? View.GONE : View.VISIBLE);
+        divisorNavegacion.setVisibility(secundaria ? View.GONE : View.VISIBLE);
+        if (secundaria) {
+            tituloBarra.setText(titulo);
+        }
     }
 
     private void actualizarContador() {

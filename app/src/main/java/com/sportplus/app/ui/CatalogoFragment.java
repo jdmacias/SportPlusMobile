@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.sportplus.app.MainActivity;
 import com.sportplus.app.R;
 import com.sportplus.app.modelo.Carrito;
 import com.sportplus.app.modelo.Catalogo;
@@ -44,7 +45,9 @@ public class CatalogoFragment extends Fragment {
         lista.setLayoutManager(new GridLayoutManager(requireContext(),
                 getResources().getInteger(R.integer.catalogo_columnas)));
         adaptador = new ProductoAdapter(Catalogo.todos(), R.string.boton_agregar_carrito,
-                producto -> Carrito.get().agregar(producto.id, 1));
+                producto -> Carrito.get().agregar(producto.id, 1),
+                producto -> ((MainActivity) requireActivity())
+                        .abrirPantalla(DetalleFragment.nuevo(producto.id), R.string.titulo_producto));
         lista.setAdapter(adaptador);
 
         buscador.addTextChangedListener(new TextWatcher() {
